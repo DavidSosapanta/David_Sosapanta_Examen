@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DavidSosapantaexamen.Registro">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="White" HasShadow="False">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
+                    <Label x:Name="lblclave" Grid.Row="1" Grid.Column="0"/>
+                    <Label Grid.Row="2" Grid.Column="0">Nombre</Label>
+                    <Entry x:Name="txtNombre" Grid.Row="2" Grid.Column="1"/>
+                    <Label Grid.Row="3" Grid.Column="0">Monto Inicial</Label>
+                    <Entry x:Name="txtmonto" Grid.Row="3" Grid.Column="1"/>
+                    <Label Grid.Row="4" Grid.Column="0">PagoMensual</Label>
+                    <Entry x:Name="txtPago" Grid.Row="4" Grid.Column="1"/>
+                </Grid>
+            </Frame>
+            <Button Command="{Binding SubmitCommand}" Text="Calcular" TextColor="Black"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="Yellow" Clicked="Button_Clicked" />
+            <Button Command="{Binding SubmitCommand}" Text="Guardar" TextColor="Black"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="Yellow" Clicked="Button_Clicked_1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

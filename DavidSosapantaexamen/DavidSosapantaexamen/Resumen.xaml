@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DavidSosapantaexamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="Yellow" HasShadow="False">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0">Usuario Conectado</Label>
+                    <Label x:Name="lblUsuario1" Grid.Row="0" Grid.Column="1"/>
+                    <Label Grid.Row="1" Grid.Column="0">Nombre</Label>
+                    <Label x:Name="lblnombre" Grid.Row="1" Grid.Column="1"/>
+                    <Label Grid.Row="2" Grid.Column="0">Total a Pagar</Label>
+                    <Label x:Name="lblpagar" Grid.Row="2" Grid.Column="1"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
